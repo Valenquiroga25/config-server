@@ -1,4 +1,9 @@
 spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/Microservicios
   application:
     name: gateway-service
   cloud:
@@ -28,3 +33,4 @@ eureka:
 
 server:
   port: 8084
+  
