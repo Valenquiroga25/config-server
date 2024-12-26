@@ -4,7 +4,7 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://example.com/realms/Microservicios
-          jwk-set-uri: http://example.com/realms/Microservicios/protocol/openid-connect/certs
+          jwk-set-uri: http://example.com/realms/Microservicios/protocol/openid-connect/cert
   application:
     name: gateway-service
   cloud:
