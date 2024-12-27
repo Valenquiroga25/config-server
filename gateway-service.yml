@@ -17,7 +17,7 @@ spring:
         - TokenRelay=
       routes:
         - id: checkout-service
-          uri: http://localhost:8080
+          uri: http://localhost:8087
           predicates:
             - Path=/checkout
           filters:
