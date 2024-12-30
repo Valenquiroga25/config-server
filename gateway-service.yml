@@ -12,8 +12,6 @@ spring:
         serviceId: config-service
         enabled: true
     gateway:
-      default-filters:
-        - TokenRelay=
       routes:
         - id: checkout-service
           uri: http://localhost:8087
