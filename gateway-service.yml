@@ -26,6 +26,9 @@ spring:
           uri: http://localhost:8081
           predicates:
             - Path=/productos
+          filters:
+            - AddRequestHeader=X-Products-Request, Gateway
+            - AddResponseHeader=X-Products-Response, Products
 eureka:
   instance:
     hostname: localhost
