@@ -34,4 +34,4 @@ eureka:
     hostname: localhost
 
 server:
-  port: 8084
+  port: 8084
