@@ -18,17 +18,11 @@ spring:
         - id: checkout-service
           uri: http://localhost:8087
           predicates:
-          - Path=/checkout
-          filters:
-            - AddRequestHeader=X-Request-from, Gateway
-            - AddResponseHeader=X-Response-from, Checkout
+           - Path=/checkout
         - id: Products-service
           uri: http://localhost:8081
           predicates:
-          - Path=/productos
-          filters:
-            - AddRequestHeader=X-Products-Request, Gateway
-            - AddResponseHeader=X-Products-Response, Products
+           - Path=/productos
 eureka:
   instance:
     hostname: localhost
